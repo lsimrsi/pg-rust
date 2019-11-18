@@ -1,0 +1,12 @@
+drop table users;
+create table users (
+    id serial primary key,
+    email text not null,
+    first text not null,
+    last text not null,
+    password text not null
+);
+
+insert into users (email, first, last, password) values
+('earl.sommer@blah.com', 'earl', 'sommer', 'asdf'),
+('lela.fairburn@blah.com', 'lela', 'fairburn', 'asdf');
